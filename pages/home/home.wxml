@@ -1,0 +1,2 @@
+<l-button text="创建任务"></l-button>
+<l-button text="test" size="mini" type="default"></l-button>
