@@ -1,2 +1,3 @@
 <l-button text="创建任务"></l-button>
 <l-button text="test" size="mini" type="default"></l-button>
+<l-clock text="点击开始闹钟"></l-clock>
