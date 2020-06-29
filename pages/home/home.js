@@ -5,9 +5,18 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    visible: true
   },
-
+  confirm(event) {
+    console.log(event.detail)
+  },
+  cancel(event) {
+    console.log(event.detail)
+    this.setData({
+      visible: false
+    })
+    console.log(this.data.visible)
+  },
   /**
    * 生命周期函数--监听页面加载
    */

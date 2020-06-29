@@ -1,6 +1,7 @@
 {
   "usingComponents": {
     "l-button":"../../components/button/button",
-    "l-clock":"../../components/clock/clock"
+    "l-clock":"../../components/clock/clock",
+    "l-confirm":"../../components/confirm/confirm"
   }
 }
