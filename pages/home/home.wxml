@@ -7,9 +7,9 @@
   </scroll-view>
   <l-button type="change" class="createButton" text="创建任务" bindtap="showConfirm"></l-button>
   <view class="tomato-wrapper">
-    <view class="tomato">
-    <l-clock text="点击开始闹钟"></l-clock>
-    </view>
+    <navigator url="/pages/tomato/tomato" class="tomato">
+      <l-clock text="点击开始闹钟"></l-clock>
+    </navigator>
   </view>
   <l-confirm bind:cancel="hiddenConfirm" bind:confirm="confirmCreate" visible="{{visibleConfirm}}" placeholder="请输入点什么"></l-confirm>
 </view>

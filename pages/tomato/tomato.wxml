@@ -1,0 +1,21 @@
+<view class="container">
+  <view class="clock">
+    <l-clock text="{{time}}" fontSize="52"/>
+  </view>
+  <view wx:if="{{!againButtonVisible}}">
+  <view class="stop">
+    <l-button wx:if="{{timerStatus==='start'}}" text="暂停" bindtap="stopTimer" size="mini"></l-button>
+    <l-button  wx:else text="开始" bindtap="startTimer" size="mini"></l-button>
+  </view>
+  <view class="abandon">
+    <l-button text="放弃" bindtap="clickAbandon" type="default" size="mini"></l-button>
+  </view>
+  
+  </view>
+  <view wx:else class="again">
+    <l-button text="再来一组" bindtap="againTimer" size="mini"></l-button>
+  </view>
+</view>
+
+<l-confirm bind:confirm="abandonConfirm" placeholder="放弃理由" bind:cancel="abandonCancel" visible="{{abandonConfirmVisble}}"></l-confirm>
+<l-confirm bind:confirm="finishConfirm" placeholder="完成了什么" bind:cancel="finishCancel" visible="{{finishConfirmVisible}}"></l-confirm>

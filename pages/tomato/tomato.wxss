@@ -1,0 +1,13 @@
+.container {
+  height: 100vh;
+  background-color: #f0f7f6;
+}
+
+.clock {
+  padding-top: 282rpx;
+  padding-bottom: 139rpx;
+}
+
+.stop{
+  margin-bottom: 48rpx;
+}

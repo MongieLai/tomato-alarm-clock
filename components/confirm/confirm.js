@@ -19,7 +19,7 @@ Component({
     confirm() {
       this.triggerEvent('confirm', this.data.text)
     },
-    watchValue(event){
+    watchValue(event) {
       this.data.text = event.detail.value
     }
   }

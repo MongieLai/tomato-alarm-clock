@@ -1,8 +1,6 @@
 {
   "pages": [
     "pages/home/home",
-    "components/clock/clock",
-    "components/confirm/confirm",
     "pages/index/index",
     "pages/logs/logs"
   ],
