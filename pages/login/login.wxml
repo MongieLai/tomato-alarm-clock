@@ -1,0 +1,10 @@
+<view class="login-wrapper">
+  <view class="userPortrait">
+    <open-data type="userAvatarUrl"></open-data>
+  </view>
+  <view class="details">
+    <open-data type="userNickName" class="name"></open-data>
+  </view>
+  <button hover-class="login-button-active" class="login-button">登录</button>
+  <text class="binding">还没有与PC端绑定？去绑定</text>
+</view>
