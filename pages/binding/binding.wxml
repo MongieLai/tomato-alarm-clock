@@ -7,5 +7,5 @@
   <l-button size="mini" text="注册" wx:else></l-button>
   <view class="tips" bindtap="changeBind" wx:if="{{isBinding}}">还没有PC账号同步数据？立即注册（点击注册）</view>
   <view class="tips" bindtap="changeBind" wx:else>已有PC账号，立即绑定（点击绑定）</view>
-  <image src="../../images/tomato.png" class="bg"></image>
+  <image src="../../images/tomato-bg.png" class="bg"></image>
 </view>

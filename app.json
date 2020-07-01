@@ -1,6 +1,5 @@
 {
   "pages": [
-    "pages/binding/binding",
     "pages/login/login",
     "pages/me/me",
     "pages/home/home",
