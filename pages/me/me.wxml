@@ -1,0 +1,30 @@
+
+
+
+<view class="container">
+  <view class="header">
+    <view class="userPortrait">
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <view class="details">
+      <open-data type="userNickName" class="name"></open-data>
+      <text>绑定PC账号</text>
+    </view>
+    <button open-type="contact" class="feedback" bindcontact="handleContact" size="mini">问题反馈</button>
+  </view>
+
+  <view class="tabs">
+    <view hover-class="hover-active" class="{{tab==='tomato'?'active':''}}" bindtap="changeTab" data-name="tomato">历史记录</view>
+    <view hover-class="hover-active" class="{{tab!=='tomato'?'active':''}}" bindtap="changeTab" data-name="task">我完成的任务</view>
+  </view>
+
+  <scroll-view scroll-y="true" class="dataList">
+    <view class="item" wx:for="{{dataList}}" wx:key='index'>
+      <view class="time">{{index}}</view>
+      <view class="content" wx:for="{{dataList[index]}}" :wx:key='index'>
+        <text>{{item.time}}</text>
+        <view class="detail">{{item.text}}</view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
