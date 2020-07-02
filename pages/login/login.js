@@ -20,14 +20,15 @@ Page({
     wx.login({
       success: (response) => {
         code = response.code
-        myHttp.post('/sign_in/mini_program_user',{
+        myHttp.get('/todos?completed=false')
+        let options = {
           code,
           iv,
           encrypted_data,
           app_id,
           app_secret,
-        })
-        console.log(111)
+        }
+        myHttp.post('/sign_in/mini_program_user',options)
       }
     })
   },
