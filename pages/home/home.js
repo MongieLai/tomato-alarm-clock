@@ -1,4 +1,4 @@
-// pages/home/home.js
+import {myAjax, myHttp} from '../../lib/http'
 Page({
 
   /**
@@ -18,6 +18,12 @@ Page({
   },
   confirmCreate(event) {
     let { detail } = event
+    myHttp.post('/todos',{
+      todo:{
+        completed:false,
+        description:detail
+      }
+    })
     if (detail) {
       this.setData({
         visibleConfirm: false,
